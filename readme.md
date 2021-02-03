@@ -137,12 +137,33 @@ A **Library Package**
 - cannot be executable directly
 - can be `import "mypackage"` in other packages
 
-## Quiz 2: Prove Yourself: Packages
+## 19. Scopes: What is the importance of names?
+
+There are **package**, **file**, **func**, and **block** scopes that are **unique within the scope**
+
+```go
+package "main"
+import "fmt" // file scoped (visible in this file)
+
+const ok = true // package scoped: visible to all files in the package
+                // not available to other packages unless imported
+
+func nope() {
+  const notok = false
+}
+
+func main() {
+  var hello = "Hello!" // block scoped declaration
+
+  fmt.Println(hello, ok) // "ok" from declaration above
+  fmt.Println(hello, notok) // ERR: notok declared in func nope() scope
+}
+```
+
+## 20. What is a package scope?
+
 
 xxx
-
-## 19. Scopes: What is the importance of names?
-## 20. What is a package scope?
 ## 21. The same names in the same package
 ## 22. Importing happens in the file scope
 ## 23. Renaming imported packages
