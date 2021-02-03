@@ -49,11 +49,84 @@ NOTE: You don't have to do this if you're on Windows.
 
 ## 13. ★ FIRST GO PROGRAM EXERCISES ★
 
-xxx
+[:ship: 3d10061](https://github.com/arafatm/learn-udemy-go-bootcamp/commit/3d10061)
+Exercise: `fmt.Println`
+
+```diff
+diff --git a/learngo/02-write-your-first-program/exercises/01-print-names/main.go b/learngo/02-write-your-first-program/exercises/01-print-names/main.go
+index 5972806..4f228f5 100644
+--- a/learngo/02-write-your-first-program/exercises/01-print-names/main.go
++++ b/learngo/02-write-your-first-program/exercises/01-print-names/main.go
+@@ -8,6 +8,8 @@
+ 
+ package main
+ 
++import "fmt"
++
+ // ---------------------------------------------------------
+ // EXERCISE: Print names
+ //
+@@ -24,6 +26,6 @@ package main
+ // ---------------------------------------------------------
+ 
+ func main() {
+-	// ?
+-	// ?
++	fmt.Println("Arafat")
++	fmt.Println("Sally")
+ }
+```
+
+[:ship: b745f3e](https://github.com/arafatm/learn-udemy-go-bootcamp/commit/b745f3e)
+`fmt.Prinln` and `Print` can take multiple params
+
+```diff
+diff --git a/learngo/02-write-your-first-program/exercises/01-print-names/main.go b/learngo/02-write-your-first-program/exercises/01-print-names/main.go
+index 4f228f5..d4c7def 100644
+--- a/learngo/02-write-your-first-program/exercises/01-print-names/main.go
++++ b/learngo/02-write-your-first-program/exercises/01-print-names/main.go
+@@ -26,6 +26,6 @@ import "fmt"
+ // ---------------------------------------------------------
+ 
+ func main() {
+-	fmt.Println("Arafat")
++	fmt.Print("My name is ", "Arafat\n")
+ 	fmt.Println("Sally")
+ }
+```
+
+[:ship: ccb74ac](https://github.com/arafatm/learn-udemy-go-bootcamp/commit/ccb74ac)
+`fmt.Println` will accept double quote and backtick, but not `single quote`
+
+```diff
+diff --git a/learngo/02-write-your-first-program/exercises/01-print-names/main.go b/learngo/02-write-your-first-program/exercises/01-print-names/main.go
+index d4c7def..f0a7b10 100644
+--- a/learngo/02-write-your-first-program/exercises/01-print-names/main.go
++++ b/learngo/02-write-your-first-program/exercises/01-print-names/main.go
+@@ -26,6 +26,6 @@ import "fmt"
+ // ---------------------------------------------------------
+ 
+ func main() {
+-	fmt.Print("My name is ", "Arafat\n")
++	fmt.Print(`My name is Arafat\n`)
+ 	fmt.Println("Sally")
+ }
+```
+
+:neckbeard: `package` and `import` declarations must come at top
+
 ## 14. ⭐️ Packages ⭐️
-## 15. Let's understand the first program
-## 16. Quick Notice: Package Scope
+
 ## 17. What is a package?
+
+Rules
+- all package files should be in the **same directory**
+- all files *in the same folder* should be in the **same package**
+  - ie `package "mypkg"`
+- `package "main"` to make it executable
+
+xxx
+
 ## 18. Learn the differences between Executable and Library Packages
 ## Quiz 2: Prove Yourself: Packages
 ## 19. Scopes: What is the importance of names?
