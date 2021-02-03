@@ -125,10 +125,22 @@ Rules
   - ie `package "mypkg"`
 - `package "main"` to make it executable
 
+## 18. Learn the differences between Executable and Library Packages
+
+An **executable package**
+- should be part of `package "main"`
+- also include a `func main()`
+- cannot be imported
+
+A **Library Package**
+- has a `package "mypackage"`
+- cannot be executable directly
+- can be `import "mypackage"` in other packages
+
+## Quiz 2: Prove Yourself: Packages
+
 xxx
 
-## 18. Learn the differences between Executable and Library Packages
-## Quiz 2: Prove Yourself: Packages
 ## 19. Scopes: What is the importance of names?
 ## 20. What is a package scope?
 ## 21. The same names in the same package
