@@ -26,6 +26,6 @@ import "fmt"
 // ---------------------------------------------------------
 
 func main() {
-	fmt.Println("Arafat")
+	fmt.Print("My name is ", "Arafat\n")
 	fmt.Println("Sally")
 }
