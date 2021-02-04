@@ -160,11 +160,9 @@ func main() {
 }
 ```
 
-## 20. What is a package scope?
-
+## 21. The same names in the same package
 
 xxx
-## 21. The same names in the same package
 ## 22. Importing happens in the file scope
 ## 23. Renaming imported packages
 ## Quiz 3: Prove Yourself: Scopes
